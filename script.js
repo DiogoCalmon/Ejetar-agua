@@ -23,12 +23,14 @@ function playPause() {
     {
         count = 1;
         audio.play();
+        song.innerHTML = "&#9208"
         result.innerHTML = "Pause";
     }
     else
     {
         count = 0;
         audio.pause()
+        song.innerHTML = "&#9658"
         result.innerHTML = "Ejetar água"
     }
 }
