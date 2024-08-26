@@ -13,3 +13,20 @@ function atualizarBotao() {
 document.addEventListener('DOMContentLoaded', atualizarBotao);
 
 window.addEventListener('resize', atualizarBotao);
+
+let audio = document.getElementById("audio");
+let go = document.querySelector(".ball");
+let count = 0;
+
+function playPause() {
+    if (count == 0)
+    {
+        count = 1;
+        audio.play();
+    }
+    else
+    {
+        count = 0;
+        audio.pause()
+    }
+}
