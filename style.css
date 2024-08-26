@@ -17,6 +17,7 @@ header {
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 3%;
+    font-size: 2vh;
 }
 
 main {
@@ -37,8 +38,9 @@ footer {
 }
 
 .ball {
-    background-color: rgb(20 184 166);
     border-radius: 50%;
+    background-color: rgb(41, 110, 180);
+    border: none;
     width: 300px;
     height: 300px;
     cursor: pointer;
@@ -51,4 +53,10 @@ footer {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
+}
+
+
+button h2 {
+    color: rgb(8 51 68);
+    
+}
