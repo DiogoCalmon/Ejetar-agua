@@ -46,13 +46,3 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
-/* styles.css */
-
-/* Largura fixa quando a tela é maior que 1000px */
-@media (min-width: 1000px) {
-    .botao {
-      width: 300px; /* Largura fixa para telas maiores que 1000px */
-    }
-  }
-  
