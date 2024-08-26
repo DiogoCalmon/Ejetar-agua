@@ -10,13 +10,21 @@ body {
 }
 
 header {
+    height: 20vh;
+    width: 100%;
     background-color: black;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 3%;
 }
 
 main {
-    background-color: white;
+    height: 33vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
 }
 
 footer {
@@ -29,5 +37,5 @@ footer {
 }
 
 .ball {
-    background-color: yellow;
+    background-color: yelow;
 }
