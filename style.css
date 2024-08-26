@@ -37,7 +37,7 @@ footer {
 }
 
 .ball {
-    background-color: yellow;
+    background-color: rgb(20 184 166);
     border-radius: 50%;
     width: 300px;
     height: 300px;
@@ -46,3 +46,13 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/* styles.css */
+
+/* Largura fixa quando a tela é maior que 1000px */
+@media (min-width: 1000px) {
+    .botao {
+      width: 300px; /* Largura fixa para telas maiores que 1000px */
+    }
+  }
+  
