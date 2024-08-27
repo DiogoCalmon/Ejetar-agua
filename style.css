@@ -46,8 +46,7 @@ footer {
     height: 250px;
     cursor: pointer;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 }
@@ -62,9 +61,9 @@ footer {
 .playpause {
     width: 65px;
     height: 65px;
-    margin-top: 3%;
-    margin-left: 3%;
     background-color: rgb(6, 59, 112);
+    margin-left: 6%;
+    margin-bottom: 2%;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     clip-path: polygon(
@@ -74,6 +73,19 @@ footer {
         50% 25%,
         100% 50%,
         100% 50%,
+        0 100%
+    );
+}
+
+.playpause.playing {
+    clip-path: polygon(
+        0 0,
+        40% 0,
+        40% 100%,
+        60% 100%,
+        60% 0,
+        100% 0,
+        100% 100%,
         0 100%
     );
 }
