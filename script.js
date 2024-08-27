@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
 
     btn.addEventListener("click", function() {
         btn.classList.toggle('playing');
-    });
+    })
 });
 
 let audio = document.getElementById("audio");
@@ -31,12 +31,10 @@ function playPause() {
     {
         count = 1;
         audio.play();
-        result.innerHTML = "Pause";
     }
     else
     {
         count = 0;
         audio.pause();
-        result.innerHTML = "Ejetar água";
     }
 }
