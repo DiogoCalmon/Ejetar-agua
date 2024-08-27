@@ -16,10 +16,10 @@ window.addEventListener('resize', atualizarBotao);
 
 window.addEventListener("load", () => {
     const ball = document.querySelector(".ball");
-    const btn = document.querySelector(".playpause");
+    
 
         ball.addEventListener("click", function() {
-            btn.classList.toggle('playing');
+            
         });
     });
 

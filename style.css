@@ -58,37 +58,7 @@ footer {
     align-self: center;
 }
 
-.playpause {
-    width: 65px;
-    height: 65px;
-    background-color: rgb(6, 59, 112);
-    margin-left: 4%;
-    margin-bottom: 2%;
-    cursor: pointer;
-    transition: 0.3s ease-in-out ;
-    clip-path: polygon(
-        0 0,
-        50% 25%,
-        50% 75%,
-        50% 25%,
-        100% 50%,
-        100% 50%,
-        0 100%
-    );
-}
 
-.playpause.playing {
-    clip-path: polygon(
-        0 0,
-        40% 0,
-        40% 100%,
-        60% 100%,
-        60% 0,
-        100% 0,
-        100% 100%,
-        0 100%
-    );
-}
 
 button h2 {
     color: rgb(8 51 68);
