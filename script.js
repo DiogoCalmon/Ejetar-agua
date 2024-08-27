@@ -16,22 +16,11 @@ window.addEventListener('resize', atualizarBotao);
 
 window.addEventListener("load", () => {
     const ball = document.querySelector(".ball");
-    const pause = document.querySelector(".pause");
-    const play = document.querySelector(".play");
-    const btn = document.querySelector("#app");
+    const icon = document.querySelector(".playpause")
 
-    btn.addEventListener("click", function() 
+    ball.addEventListener("click", function() 
     {
-        if(play.classList.contains("active"))
-        {
-            play.classList.remove("active");
-            pause.classList.add("active");
-        }
-        else
-        {
-            pause.classList.remove("active");
-            play.classList.add("active")
-        }
+        icon.classList.toggle("playing");
     })      
 });
 
