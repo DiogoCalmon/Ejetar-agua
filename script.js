@@ -4,7 +4,7 @@ function atualizarBotao() {
 
     const larguraBotao = Math.max(250, larguraTelaAtual - larguraTelaModelo);
 
-    if (innerWidth < 1000)
+    if (larguraTelaAtual < 1000)
     {
         document.querySelector('.ball').style.width = `${larguraBotao}px`;
     }
@@ -18,24 +18,27 @@ window.addEventListener("load", () => {
     const ball = document.querySelector(".ball");
     const btn = document.querySelector(".playpause");
 
-    ball.addEventListener("click", function() {
-        btn.classList.toggle('playing');
-    })
+    if (ball){
+        ball.addEventListener("click", function() {
+            btn.classList.toggle('playing');
+            playPause();
+        });
+    }
 });
 
 let audio = document.getElementById("audio");
-let go = document.querySelector(".ball");
 let count = 0;
 
 function playPause() {
-    if (count == 0)
-    {
-        count = 1;
-        audio.play();
-    }
-    else
-    {
-        count = 0;
-        audio.pause();
+    if (audio) {
+        if (count === 0) {
+            count = 1;
+            audio.play();
+        } else {
+            count = 0;
+            audio.pause();
+        }
+    } else {
+        console.error("Elemento de áudio não encontrado.");
     }
 }

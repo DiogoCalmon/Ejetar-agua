@@ -65,6 +65,7 @@ footer {
     margin-left: 6%;
     margin-bottom: 2%;
     cursor: pointer;
+    transition: clip-path 0.3s ease-in-out;
     clip-path: polygon(
         0 0,
         50% 25%,
@@ -74,7 +75,6 @@ footer {
         100% 50%,
         0 100%
     );
-    transition: 0.3s ease-out;
 }
 
 .playpause.playing {
@@ -88,7 +88,6 @@ footer {
         100% 100%,
         0 100%
     );
-    transition: 0.3s ease-out;
 }
 
 button h2 {
