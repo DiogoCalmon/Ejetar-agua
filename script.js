@@ -16,12 +16,24 @@ window.addEventListener('resize', atualizarBotao);
 
 window.addEventListener("load", () => {
     const ball = document.querySelector(".ball");
-    
+    const pause = document.querySelector(".pause");
+    const play = document.querySelector(".play");
+    const btn = document.querySelector("#app");
 
-        ball.addEventListener("click", function() {
-            
-        });
-    });
+    btn.addEventListener("click", function() 
+    {
+        if(play.classList.contains("active"))
+        {
+            play.classList.remove("active");
+            pause.classList.add("active");
+        }
+        else
+        {
+            pause.classList.remove("active");
+            play.classList.add("active")
+        }
+    })      
+});
 
 let audio = document.getElementById("audio");
 let count = 0;
