@@ -18,27 +18,21 @@ window.addEventListener("load", () => {
     const ball = document.querySelector(".ball");
     const btn = document.querySelector(".playpause");
 
-    if (ball){
         ball.addEventListener("click", function() {
             btn.classList.toggle('playing');
-            playPause();
         });
-    }
-});
+    });
 
 let audio = document.getElementById("audio");
 let count = 0;
 
 function playPause() {
-    if (audio) {
-        if (count === 0) {
-            count = 1;
-            audio.play();
-        } else {
-            count = 0;
-            audio.pause();
-        }
-    } else {
-        console.error("Elemento de áudio não encontrado.");
+    if (count === 0) {
+        count = 1;
+        audio.play();
+    } else
+    {
+        count = 0;
+        audio.pause();
     }
 }
