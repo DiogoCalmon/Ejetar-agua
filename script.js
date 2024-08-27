@@ -15,9 +15,10 @@ document.addEventListener('DOMContentLoaded', atualizarBotao);
 window.addEventListener('resize', atualizarBotao);
 
 window.addEventListener("load", () => {
-    const btn = document.querySelector(".ball");
+    const ball = document.querySelector(".ball");
+    const btn = document.querySelector(".playpause");
 
-    btn.addEventListener("click", function() {
+    ball.addEventListener("click", function() {
         btn.classList.toggle('playing');
     })
 });
