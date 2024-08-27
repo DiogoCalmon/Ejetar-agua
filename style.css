@@ -20,6 +20,7 @@ header {
     align-items: center;
     padding-bottom: 3%;
     font-size: 2vh;
+    transition: 0.3s ease-in-out;
 }
 
 main {
@@ -50,6 +51,7 @@ footer {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease-in-out;
 }
 
 .poppins-thin {
@@ -68,7 +70,7 @@ footer {
     margin-left: 6%;
     margin-bottom: 2%;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     clip-path: polygon(
         0 0,
         50% 25%,
@@ -81,6 +83,7 @@ footer {
 }
 
 .playpause.playing {
+    margin-right: 2%;
     clip-path: polygon(
         0 0,
         40% 0,
