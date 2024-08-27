@@ -103,6 +103,61 @@ footer {
     opacity: 1;
 }
 
+.pause.active .line_1 {
+    margin: 25% 0;
+    left: 28%;
+}
+
+.pause.active .line_2 {
+    margin: 25% 0;
+    left: 28%;
+}
+
+.play .line {
+    margin: 25% 0;
+}
+
+.play .line_1 {
+    left: 28%;
+}
+
+.play .line_2 {
+    height: 56%;
+    left: 60%;
+    transform: rotate(-55deg) translateY(-128px) translateX(16px);
+    transition-delay: 1000ms;
+}
+
+.play .line_3 {
+    height: 56%;
+    left: 60%;
+    transform: rotate(55deg) translateY(-128px) translateX(16px);
+    transition-delay: 200ms;
+}
+
+.pause.active .line {
+    opacity: 1;
+    height: 62%;
+    margin: 20% 0;
+}
+
+.play.active .line_1 {
+    left: 28%;
+    transform: translateY(-1px);
+}
+
+.play.active .line_2 {
+    height: 56%;
+    left: 63%;
+    transform: rotate(-57deg) translateY(-18px) translateX(3.5px);
+}
+
+.play.active .line_3 {
+    height: 56%;
+    left: 63%;
+    transform: rotate(57deg) translateY(13px) translateX(0.5px);
+}
+
 button h2 {
     color: rgb(8 51 68);
     font-size: 500%;
