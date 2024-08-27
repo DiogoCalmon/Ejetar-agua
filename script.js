@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', atualizarBotao);
 window.addEventListener('resize', atualizarBotao);
 
 window.addEventListener("load", () => {
-    const btn = document.querySelector(".playpause");
+    const btn = document.querySelector(".ball");
 
     btn.addEventListener("click", function() {
-        btn.classList.toggle("playing");
-    })
-})
+        btn.classList.toggle('playing');
+    });
+});
 
 let audio = document.getElementById("audio");
 let go = document.querySelector(".ball");

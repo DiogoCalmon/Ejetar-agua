@@ -65,7 +65,7 @@ footer {
     margin-left: 6%;
     margin-bottom: 2%;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 2s;
     clip-path: polygon(
         0 0,
         50% 25%,
