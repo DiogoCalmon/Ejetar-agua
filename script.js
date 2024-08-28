@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
         console.log("viewportHeight: " + viewportHeight);
         console.log("currentHeightVh: " + currentHeightVh);
 
-        if (currentHeightVh > 4)
+        if (currentHeightVh > 10)
         {
             header.style.opacity = '0%';
             header.style.height = '3vh';
