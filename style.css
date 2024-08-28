@@ -98,19 +98,6 @@ footer {
     );
 }
 
-
-button h2 {
-    color: rgb(8 51 68);
-    font-size: 500%;
-    margin-left: 0.2em;
-}
-
-button h3 {
-    font-size: 120%;
-    margin-left: 0.2em;
-    font-family: "Poppins", sans-serif;
-}
-
 .texts {
     
     height: 0%;
@@ -136,4 +123,17 @@ button h3 {
 
 .product {
     color: rgb(226 232 240);
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(67, 134, 201);
 }
