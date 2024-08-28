@@ -20,10 +20,17 @@ window.addEventListener("load", () => {
 
     ball.addEventListener("click", function() 
     {
-        const header = querySelector("#header");
-        console.log("funciocou");
+        const header = document.querySelector("#header"); 
 
-        header.style.height = '10vh';
+        if (header.style.height == '20vh')
+        {
+            header.style.height = '10vh';
+        }
+        else
+        {
+            header.style.height = '20vh';
+        }
+        
         icon.classList.toggle("playing");
     })      
 });
