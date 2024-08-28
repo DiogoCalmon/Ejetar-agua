@@ -1,18 +1,3 @@
-function atualizarBotao() {
-    const larguraTelaModelo = 720;
-    const larguraTelaAtual = window.innerWidth;
-
-    const larguraBotao = Math.max(250, larguraTelaAtual - larguraTelaModelo);
-
-    if (larguraTelaAtual < 1000)
-    {
-        document.querySelector('.ball').style.width = `${larguraBotao}px`;
-    }
-}
-
-document.addEventListener('DOMContentLoaded', atualizarBotao);
-
-window.addEventListener('resize', atualizarBotao);
 
 window.addEventListener("load", () => {
     const ball = document.querySelector(".ball");
@@ -22,7 +7,12 @@ window.addEventListener("load", () => {
     {
         const header = document.querySelector("#header"); 
 
-        if (header.style.height == '20vh')
+        const currentHeightPx = parseFloat(window.getComputedStyle(header).height);
+        const viewportHeight = window.innerHeight;
+        const currentHeightVh = (currentHeightPx / viewportHeight) * 100;
+        console.log(currentHeightVh)
+
+        if (currentHeightVh == '20vh')
         {
             header.style.height = '10vh';
         }
@@ -42,7 +32,8 @@ function playPause() {
     if (count === 0) {
         count = 1;
         audio.play();
-    } else
+    } 
+    else
     {
         count = 0;
         audio.pause();
