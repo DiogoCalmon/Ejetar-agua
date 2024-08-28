@@ -51,7 +51,7 @@ footer {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    transition: 0.3s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
 .poppins-thin {

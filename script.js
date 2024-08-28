@@ -10,14 +10,19 @@ window.addEventListener("load", () => {
         const currentHeightPx = parseFloat(window.getComputedStyle(header).height);
         const viewportHeight = window.innerHeight;
         const currentHeightVh = (currentHeightPx / viewportHeight) * 100;
-        console.log(currentHeightVh)
+        
+        console.log("currentHeightPx: " + currentHeightPx);
+        console.log("viewportHeight: " + viewportHeight);
+        console.log("currentHeightVh: " + currentHeightVh);
 
-        if (currentHeightVh == '20vh')
+        if (currentHeightVh > 4)
         {
-            header.style.height = '10vh';
+            header.style.opacity = '0%';
+            header.style.height = '3vh';
         }
         else
         {
+            header.style.opacity = '100%';
             header.style.height = '20vh';
         }
         
